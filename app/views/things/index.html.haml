@@ -3,7 +3,9 @@
     .header__text
       家計簿アプリ
     .header__link
-      = link_to things_path ,class:" header__link__write" do
+      = link_to edit_user_path(current_user),class:"header__link__name" do
+        = current_user.name
+      = link_to new_thing_path ,class:" header__link__write" do
         記帳する
   .body
     .body__frame
