@@ -8,4 +8,9 @@
         .body__frame__content__price
           ¥
           = thing.price
-   
+        .body__frame__content__link
+          = link_to  "/things/#{thing.id}", method: :delete,class:"delete-btn" do
+            削除
+          = link_to  "/things/#{thing.id}/edit", method: :get,class: "edit-btn" do
+            編集
+
