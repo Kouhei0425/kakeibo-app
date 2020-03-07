@@ -13,6 +13,21 @@ class ThingsController < ApplicationController
     redirect_to root_path
   end
 
+  def edit
+    @thing = Thing.find(params[:id])
+  end
+
+  def update
+    thing = Thing.find(params[:id])
+    thing.update(thing_params)
+  end
+
+  def destroy
+    thing = Thing.find(params[:id])
+    thing.destroy
+  end
+
+
   private
   def thing_params
     params.require(:thing).permit(:name, :price)
