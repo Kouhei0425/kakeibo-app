@@ -2,7 +2,12 @@
   box-sizing: border-box;
 }
 
-.main{
+body{
+  background-image: url(bgi.png);
+  background-size:cover;
+  height: 100vh;
+}
+
   .header{
     height: 100px;
     width: 100%;
@@ -14,6 +19,7 @@
       font-size: 30px;
       line-height: 100px;
       margin-left: 30px;
+      text-decoration: none;
     }
     &__link{
       line-height: 100px;
@@ -37,20 +43,51 @@
   }
   .body{
     &__frame{
-      height: 1000px;
       width: 700px;
       margin: 100px  auto;
-      border: 1px solid;
+      border-bottom: 1px solid;
       &__content{
         height: 50px;
         width: 698px;
         padding: 0 25px;
-        background-color: wheat;
-        border-bottom: solid 1px;
+        background-color: #FFFAF0;
+        border: solid 1px;
+        border-bottom: none;
         display: flex;
         justify-content: space-between;
         line-height: 50px;
       }
+    }
+  }
+
+.new-things{
+  width: 500px;
+  height: 500px;
+  border: solid 1px;
+  margin: 100px  auto 0;
+  background-color: #FFFAF0;
+  .form{
+    width: 400px;
+    margin: 50px auto 0;
+    &__text{
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+    &__name{
+      height: 50px;
+      margin:0 0 20px 200px;
+      padding:10px;
+    }
+    &__price{
+      height: 50px;
+      margin:0 0 20px 200px;
+      padding: 10px;
+    }
+    &__submit{
+      margin:80px 0 0 150px;
+      width: 100px;
+      height: 50px;
+      background-color: orange;
     }
   }
 }
