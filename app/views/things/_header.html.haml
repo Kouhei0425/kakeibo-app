@@ -1,5 +1,5 @@
 .header
-  = link_to root_path, class:"header__text" do
+  = link_to user_path(current_user.id), class:"header__text" do
     家計簿アプリ
   .header__link
     = link_to edit_user_path(current_user),class:"header__link__name" do

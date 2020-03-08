@@ -1,6 +1,6 @@
 class ThingsController < ApplicationController
   def index
-    @things = Thing.all
+    @things = Thing.includes(:user)
   end
 
   def new
@@ -10,7 +10,7 @@ class ThingsController < ApplicationController
   def create
     # binding.pry
     Thing.create(thing_params)
-    redirect_to root_path
+    redirect_to user_path(current_user.id)
   end
 
   def edit
@@ -30,6 +30,6 @@ class ThingsController < ApplicationController
 
   private
   def thing_params
-    params.require(:thing).permit(:name, :price)
+    params.require(:thing).permit(:name, :price).merge(user_id: current_user.id)
   end
 end
