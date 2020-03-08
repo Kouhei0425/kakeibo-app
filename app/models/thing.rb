@@ -1,4 +1,4 @@
 class Thing < ApplicationRecord
-  # belongs_to :user
+  belongs_to :user
   validates :name, :price, presence: true
 end
