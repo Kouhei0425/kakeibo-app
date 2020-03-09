@@ -14,13 +14,14 @@
               削除
             = link_to  "/things/#{thing.id}/edit", method: :get,class: "edit-btn" do
               編集
+      = paginate(@things)
     .body__frame__total
       .body__frame__total__text
         支出合計
       .body__frame__total__price
         ¥
         = Thing.all.sum(:price)
-  = paginate(@things)
+
     
 
 
