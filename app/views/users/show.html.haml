@@ -20,4 +20,7 @@
       .body__frame__total__price
         ¥
         = Thing.all.sum(:price)
+  = paginate(@things)
+    
+
 

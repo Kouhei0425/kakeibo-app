@@ -13,7 +13,7 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
-    @things = @user.things
+    @things = @user.things.page(params[:page]).per(8)
   end
 
   private
