@@ -45,7 +45,7 @@ body{
   .body{
     &__frame{
       width: 700px;
-      margin: 100px  auto;
+      margin: 100px  auto 0;
       border-bottom: 1px solid;
       &__content{
         height: 50px;
@@ -97,6 +97,16 @@ body{
           font-weight: bold;
           width: 400px;
         }
+      }
+    }
+    .pagination{
+      text-align: center;
+      margin-top:50px;
+      span{
+        background-color:orange;
+        padding:5px;
+        font-weight: bold;
+        border-radius:10px;
       }
     }
   }
