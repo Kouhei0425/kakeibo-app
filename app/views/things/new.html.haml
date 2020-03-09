@@ -1,5 +1,6 @@
 = render "header"
 .new-things
+  あ
   .form
     = form_for @thing do |f|
       .form__text
@@ -9,3 +10,4 @@
         ・買った物の値段を入力してください
       = f.text_field :price, class: 'form__price', placeholder: '¥ 50,000'
       = f.submit '登録', class: 'form__submit'
+
