@@ -9,7 +9,7 @@
           ¥
           = thing.price
         .awa
-          = thing.created_at
+          = thing.created_at strftime("%m-%d")
         - if user_signed_in? && current_user.id == @user.id
           .body__frame__content__link
             = link_to  "/things/#{thing.id}", method: :delete,class:"delete-btn" do
