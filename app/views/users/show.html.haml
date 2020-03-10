@@ -8,6 +8,8 @@
         .body__frame__content__price
           ¥
           = thing.price
+        .awa
+          = thing.created_at
         - if user_signed_in? && current_user.id == @user.id
           .body__frame__content__link
             = link_to  "/things/#{thing.id}", method: :delete,class:"delete-btn" do
