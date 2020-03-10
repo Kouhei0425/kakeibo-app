@@ -21,8 +21,7 @@
         支出合計
       .body__frame__total__price
         ¥
-        = Thing.all.sum(:price)
-  = paginate(@things)
-    
-
-
+        = @total
+    = paginate(@things)
+  .graph
+    = column_chart @data, colors: ["#0000FF", "#FF99CC"]
