@@ -56,16 +56,24 @@ body{
         border-bottom: none;
         display: flex;
         line-height: 50px;
+        &__date{
+          width:70px;
+          border-right: 1px dotted;
+        }
         &__name{
-          width: 400px;
+          width: 200px;
+          margin-left: 20px;
+          border-right: 1px dotted;
         }
         &__price{
-          width: 150px;
+          width: 200px;
+          margin-left: 20px;
+          border-right: 1px dotted;
         }
         &__link{
           width:90px ;
           line-height: 40px;
-          margin-top: 5px;
+          margin: 5px 0 0 30px;
           .delete-btn{
             text-decoration: none;
             color:white;
