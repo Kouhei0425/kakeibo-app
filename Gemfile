@@ -57,6 +57,7 @@ gem 'font-awesome-sass'
 gem 'devise'
 gem 'pry'
 gem 'kaminari'
+gem 'chartkick'
 
 group :production do
   gem 'unicorn', '5.4.1'

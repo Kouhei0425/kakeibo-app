@@ -3,8 +3,7 @@
 }
 
 body{
-  background-image:image-url('bgi.png');
-  background-size:cover;
+  background-color:#FFFFBB	;
   height: 100vh;
   position:relative
 }
@@ -43,15 +42,15 @@ body{
     }
   }
   .body{
+    display: flex;
     &__frame{
       width: 700px;
-      margin: 100px  auto 0;
-      border-bottom: 1px solid;
+      margin: 100px 0 0 100px;
       &__content{
         height: 50px;
         width: 698px;
         padding: 0 25px;
-        background-color: #FFFAF0;
+        background-color: white;
         border: solid 1px;
         border-bottom: none;
         display: flex;
@@ -96,7 +95,6 @@ body{
         height: 50px;
         width: 698px;
         border:solid 1px;
-        border-bottom:none;
         background-color: #F8F8FF;
         display: flex;
         line-height: 50px;
@@ -127,7 +125,7 @@ body{
   height: 500px;
   border: solid 1px;
   margin: 100px  auto 0;
-  background-color: #FFFAF0;
+  background-color: white;
   .form{
     width: 400px;
     margin: 50px auto 0;
@@ -165,4 +163,11 @@ body{
   &__message{
     margin:80px 0 0 180px;
   }
+}
+
+.graph{
+  margin:150px auto 0;
+  width: 500px;
+  height: 300px;
+  padding:10px 0;
 }

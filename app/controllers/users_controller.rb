@@ -13,7 +13,9 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
+    @total = @user.things.sum(:price)
     @things = @user.things.page(params[:page]).per(8)
+    @data = {"収入" => @user.monthly_income, "支出" => @total}
   end
 
   private
